@@ -15,13 +15,14 @@ body {
 
 /* Will need to make hambuger when closing */
 .header {
-  margin-top: 3%;
   position: absolute;
-  margin-left: 33%;
+  top: 3%; /* replace margin-top with top to set its position from the top of the page */
+  left: 43%; /* move the left edge to the center of the page */
+  transform: translateX(-50%); /* move it left by half its width */
   list-style: none;
   display: flex;
-  gap: 80%;
-  z-index: 1; /* Add this */
+  gap:  80%; /* Adjust this as needed, 80% seemed very large */
+  z-index: 1;
 }
 
 a {
