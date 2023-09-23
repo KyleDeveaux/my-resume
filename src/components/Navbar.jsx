@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
+import HeroCarousel from '../components/HeroCarousel.jsx';
 import "aos/dist/aos.css";
 import "../styling/Navbar.css";
 
@@ -60,7 +61,7 @@ function Navbar() {
           </div>
           {/* Caresel */}
           <div className="carr">
-            <img src="" alt="" srcset="" />
+            <HeroCarousel/>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import ResumeCarousel from "../components/ResumeCarousel";
-import "../styling/Resume.css";
+import ResumeCarousel from "./ResumeCarousel";
+import "../styling/Project.css";
 
-function resume() {
+function Project() {
   return (
     <div className="projects">
       <div className="headerProjects">
@@ -14,4 +14,4 @@ function resume() {
   );
 }
 
-export default resume;
+export default Project;

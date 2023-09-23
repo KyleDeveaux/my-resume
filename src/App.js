@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Resume from "./components/Resume";
+import Project from "./components/Project";
 
 function App() {
   return (
   <div> 
     <Navbar/>
 
-    <Resume/>
+    <Project/>
 
     
   </div>

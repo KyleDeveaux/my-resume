@@ -59,11 +59,14 @@ a {
 }
 /* Will need to continue to work on resizing carasel. */
 .carr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
-  max-width: 80rem;
-  height: auto;
+  max-width: 50rem;
+  height: 45rem;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 25vh 4vw;
+  padding: .5vh 2vw;
   margin: 2vh 2vw;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -84,6 +87,7 @@ a {
   }
 
   .carr {
+    height: 500px;
     padding: 4vh 4vw;
   }
 }

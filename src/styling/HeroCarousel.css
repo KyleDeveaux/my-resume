@@ -1,0 +1,25 @@
+/* Editing for the container for our slides */
+.slidesBox {
+    
+    background-image: center;}
+
+/* CSS for slides */
+.slides{
+    max-width: 100%; /* This ensures the image doesn't overflow its container */
+    height: auto;
+}
+
+.slides img {
+    padding: 20px; /* adjust as needed */
+    box-sizing: border-box; /* ensures padding doesn't add to the overall size of the image */
+    border: 20px solid transparent; /* adjust as needed */
+    width: 100%; /* or a fixed width, e.g., 300px */
+    height: 100%; /* or a fixed height, e.g., 200px */
+    object-fit: cover; /* cover will make sure your images cover the area of your container. */
+    border-radius: 10px;
+
+  }
+  
+  .slides, .slides img, .image-container {
+    box-sizing: border-box;
+}
