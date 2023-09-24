@@ -3,11 +3,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import projectImg from "../images/projectImg/projectOne.png";
 import "../styling/Carousel.css";
+import data from "../data.json";
 
 function ResumeCarousel() {
   const responsive = {
     superLargeDesktop: {
-
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
