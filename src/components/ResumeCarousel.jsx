@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import projectImg from "../images/projectImg/projectOne.png";
 import "../styling/Carousel.css";
-import data from "../data.json";
+import data from "../data";
 
 function ResumeCarousel() {
   const responsive = {
@@ -24,67 +24,33 @@ function ResumeCarousel() {
       items: 1,
     },
   };
+  // Use mapping to cycle through each of our data in our data file
+  const projectData = data.map(item => {
+    return (
+      // structure our data
+<div className="App">
+          <div className="card">
+            <img className="product--image" src={item.image} alt="projects" />
+            <h2>{item.title}</h2>
+            <p>{item.summary}</p>
+            <p>
+              <button>View Details</button>
+            </p>
+          </div>
+      </div>
+    )
+  })
+  
+  
+  
   return (
     <div>
-      <div className="App">
-        <Carousel responsive={responsive}>
-          <div className="card">
-            <img className="product--image" src={projectImg} alt="projects" />
-            <h2>MOT System</h2>
-            <p>Summary of project</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
-
-          <div className="card">
-            <img className="product--image" src={projectImg} alt="projects" />
-            <h2>MOT System</h2>
-            <p>Summary of project</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
-
-          <div className="card">
-            <img className="product--image" src={projectImg} alt="projects" />
-            <h2>MOT System</h2>
-            <p>Summary of project</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
-
-          <div className="card">
-            <img className="product--image" src={projectImg} alt="projects" />
-            <h2>MOT System</h2>
-            <p>Summary of project</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
-
-          <div className="card">
-            <img className="product--image" src={projectImg} alt="projects" />
-            <h2>MOT System</h2>
-            <p>Summary of project</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
-
-          <div className="card">
-            <img className="product--image" src={projectImg} alt="projects" />
-            <h2>MOT System</h2>
-            <p>Summary of project</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
-        </Carousel>
-      </div>
+      <Carousel responsive={responsive}>
+        {projectData}
+      </Carousel>
     </div>
   );
 }
 
 export default ResumeCarousel;
+
