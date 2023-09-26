@@ -39,7 +39,7 @@ function Navbar() {
         <div className="header">
           <a
             href="https://www.linkedin.com/in/kyle-deveaux-74ba57170/"
-            className="links"
+            className="Link"
           >
             LinkedIn
           </a>
@@ -48,7 +48,7 @@ function Navbar() {
             Journey
           </a>
           {/* Will bring you down to the resume section of the page */}
-          <a href="" className="links">
+          <a href="" className="Link">
             Resume
           </a>
         </div>

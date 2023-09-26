@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import projectImg from "../images/projectImg/projectOne.png";
 import "../styling/Carousel.css";
 import data from "../data";
 

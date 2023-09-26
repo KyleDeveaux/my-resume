@@ -3,7 +3,6 @@ import ImageSlider from "./ImageSlider";
 import image1 from "../images/heroCar/IMG1.jpg";
 import image2 from "../images/heroCar/IMG3.JPG";
 import image3 from "../images/heroCar/IMG4.JPG";
-// import Img from "../Img.json"
 import '../styling/HeroCarousel.css'
 
 function HeroCarousel() {

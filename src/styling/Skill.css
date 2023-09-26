@@ -1,0 +1,29 @@
+.skill {
+    background-color: rgba(220, 222, 218, 0.431);
+    padding: 20px;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .col {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    text-align: center;
+  }
