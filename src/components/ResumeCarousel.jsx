@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../styling/Carousel.css";
 import data from "../data";
+import Modal from "./Modal";
 
 function ResumeCarousel() {
+  const [ showModal, setShowModal ] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const openModal = (item) => {
+    setSelectedItem(item)
+    setShowModal(true);
+  }
+
+  const closeModal = (item) => {
+    setSelectedItem(item)
+    setShowModal(false);
+  }
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -23,33 +37,65 @@ function ResumeCarousel() {
       items: 1,
     },
   };
-  // Use mapping to cycle through each of our data in our data file
-  const projectData = data.map(item => {
-    return (
-      // structure our data
-<div className="App">
-          <div className="card">
-            <img className="product--image" src={item.image} alt="projects" />
-            <h2>{item.title}</h2>
-            <p>{item.summary}</p>
-            <p>
-              <button>View Details</button>
-            </p>
-          </div>
+  const projectData = data.map((item) => (
+    <div className="App" key={item.id}>
+      <div className="card">
+        <img className="product--image" src={item.image} alt="projects" />
+        <h2>{item.title}</h2>
+        <p>{item.summary}</p>
+        <p>
+          <button className="openModalBtn" onClick={() => openModal(item)}>View Details</button>
+        </p>
       </div>
-    )
-  })
-  
-  
-  
+    </div>
+  ));
   return (
     <div>
       <Carousel responsive={responsive}>
         {projectData}
       </Carousel>
+      {showModal && selectedItem && (
+        <Modal
+          title={selectedItem.title}
+          closeModal={closeModal}
+          objective={selectedItem.objective}
+          lesson={selectedItem.lesson}
+        />
+      )}
     </div>
   );
 }
-
 export default ResumeCarousel;
+
+
+  // Use mapping to cycle through each of our data in our data file
+  // const projectData = data.map(item => {
+  //   return (
+  //     <div className="App">
+  //       <div className="card">
+  //         <img className="product--image" src={item.image} alt="projects" />
+  //         <h2>{item.title}</h2>
+  //         <p>{item.summary}</p>
+  //         <p>
+  //           <button onClick={() => openModal(item)}>View Details</button>
+  //           {showModal && selectedItem === item && (
+  //             <Modal
+  //               title={item.title}
+  //               closeModal={closeModal}
+  //             />
+  //           )}
+  //         </p>
+  //       </div>
+  //     </div>
+  //   )
+  // })
+//   return (
+//     <div>
+//       <Carousel responsive={responsive}>
+//         {projectData}
+//       </Carousel>
+//     </div>
+//   );
+// }
+
 

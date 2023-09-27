@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import Skill from "./components/Skill";
+import Modal from "./components/Modal";
+
 
 function App() {
   return (
@@ -8,7 +11,10 @@ function App() {
     <Navbar/>
 
     <Project/>
+    <div>
+        <Skill/>
 
+      </div>
     
   </div>
   )

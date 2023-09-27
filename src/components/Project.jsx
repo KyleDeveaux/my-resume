@@ -1,6 +1,5 @@
 import React from "react";
 import ResumeCarousel from "./ResumeCarousel";
-import Skill from "./Skill";
 import "../styling/Project.css";
 
 function Project() {
@@ -14,9 +13,6 @@ function Project() {
         <ResumeCarousel />
       </div>
     </div>
-      <div>
-        <Skill/>
-      </div>
     </>
   );
 }
