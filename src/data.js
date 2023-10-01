@@ -6,7 +6,7 @@ export default [
     summary: "Project FrontEnd Leader",
     date: "Aug - April 2023",
     objective:
-      "The Florida Power & Light (FPL) company embarked on an initiative to bolster the safety measures for their workers, focusing on developing a sophisticated system capable of detecting vehicles encroaching on designated maintenance zones. As the leader of Team 18, I meticulously organized and coordinated with my team through structured sprints, ensuring that we met our objectives within the set deadlines. My primary responsibilities revolved around spearheading both the frontend and backend development of the project, enabling the integration of various technologies and facilitating seamless communication within the team to ensure the realization of our goals. Together we successfully achieved the goals outlined by FPL by adeptly applying cutting-edge technologies. We integrated a microcontroller with a lidar sensor, enabling the real-time monitoring and tracking of moving vehicles. My partner and I developed a robust backend system, ensuring seamless data transmission to a cloud-based server, where it was securely stored and relayed to the frontend interface that I also chiefly designed and implemented.",
+      "Leading Team 18, I orchestrated the development of a sophisticated system for Florida Power & Light to enhance worker safety by detecting vehicles entering maintenance zones. My key role involved steering both frontend and backend development, ensuring the seamless integration of cutting-edge technologies including microcontrollers and lidar sensors for real-time vehicle tracking. Our coordinated efforts and technical prowess led to the successful creation of a robust system, achieving FPL’s objectives and demonstrating our commitment to innovation and safety.",
     lesson: "During this project, I deepened my knowledge of React and JavaScript, honing my skills in crafting responsive interfaces. I familiarized myself with MongoDB for effective database management and AWS for secure cloud solutions. Exploring Python, I tackled backend challenges and mastered the creation and utilization of APIs, crucial for real-time data transfer. Additionally, I gained insights into embedded systems, learning to integrate microcontrollers with sensors for real-time monitoring. This experience was pivotal in broadening my technical skill set and preparing me for future technological endeavors.",
   },
   {
@@ -16,12 +16,12 @@ export default [
       "https://i.ibb.co/56L6dwg/modern-architectural-style-with-warm-finishes-to-compliment-mountain-setting.jpg",
     summary: "Project Leader ",
     date: "",
-    objective: "",
+    objective: "In this project, I assumed the role of team leader, guiding our group in developing a tailored property management database. Our objective was to enable users to catalog items for their properties and track associated costs seamlessly. I was instrumental in instilling structure and orchestrating the project, organizing sprints, and ensuring team accountability to meet our deadlines. I assigned each member specific tasks to create individual components and educated them on the importance of functional programming in React, as it was their first encounter with the framework. Being at the forefront of both frontend and backend development, I ensured the seamless integration and functionality of the entire system.",
     lesson: "",
   },
   {
     id: 3,
-    title: "Instgram Clone",
+    title: "Instagram Clone",
     image:
       "https://user-images.githubusercontent.com/81199017/196583349-e977c918-f1c8-4733-a9c6-3a4960d4b26d.gif",
     summary: "School Project",

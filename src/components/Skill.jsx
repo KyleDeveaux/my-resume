@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Skill() {
   return (
     <div className="skill">
-        <h2>Skills</h2>
+        <h1>Skills</h1>
       <div class="row">
         <div class="col col-md-4">
           <ul>

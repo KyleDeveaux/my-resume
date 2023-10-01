@@ -1,28 +1,30 @@
 /* Universal Settings */
-body {
+/* body {
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
-.nav-background {
+/* .nav-background {
   background: url("/Users/kymac/Desktop/PersonalProjects/ResumeApp/my-resume/src/images/pexels-stephan-seeber-1054218.jpg")
     no-repeat center center;
   height: 100%;
   width: 100%;
-  background-size: cover; /* Add this */
-}
+  background-size: cover; /* Add this 
+}*/  
 
 /* Will need to make hambuger when closing */
 .header {
   position: absolute;
   top: 3%; /* replace margin-top with top to set its position from the top of the page */
-  left: 43%; /* move the left edge to the center of the page */
+  left: 50%; /* move the left edge to the center of the page */
+  justify-content: center;
   transform: translateX(-50%); /* move it left by half its width */
   list-style: none;
   display: flex;
-  gap:  80%; /* Adjust this as needed, 80% seemed very large */
+  gap:  100%; /* Adjust this as needed, 80% seemed very large */
   z-index: 1;
+  font-size: 22px;
 }
 
 .Link {
@@ -30,8 +32,19 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 800px) {
+  .headerQoute,
+  .carr {
+    flex-basis: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
 /* Hero/Quote section */
-.personal {
+/* .personal {
   display: flex;
   align-items: center;
   background-size: cover;
@@ -45,20 +58,20 @@ body {
   margin-left: 7vh;
   margin-top: 5vh;
   padding-bottom: 5vh;
-}
+} */
 
-.header_name {
+/* .header_name {
   font-size: 3em;
-}
+} */
 
-.qoute {
+/* .qoute {
   font-size: 1.5em;
   margin: 1em 0;
   max-width: 800px;
   margin-left: 2vh;
-}
+} */
 /* Will need to continue to work on resizing carasel. */
-.carr {
+/* .carr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,34 +79,23 @@ body {
   max-width: 50rem;
   height: 45rem;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: .5vh 2vw;
+  padding: .5vh 1vw;
   margin: 2vh 2vw;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-}
+} */
 
 /* Media Query for screens smaller than 800px */
-@media only screen and (max-width: 800px) {
-  .headerQoute,
-  .carr {
-    flex-basis: 100%;
-  }
 
-  .header {
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-  }
-
-  .carr {
+  /* .carr {
     height: 500px;
     padding: 4vh 4vw;
-  }
+  } */
 }
 
 /* Testing code */
-.test {
+/* .test {
   background-color: red;
   color: white;
-}
+} */
