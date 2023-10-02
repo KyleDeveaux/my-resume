@@ -5,7 +5,7 @@ import "../styling/Project.css";
 function Project() {
   return (
     <>
-      <div className="projects">
+      <div className="projects" id="Journey">
         <div className="headerProjects">
           <h1>Journey</h1>
           <p>

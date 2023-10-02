@@ -1,0 +1,57 @@
+.head-line {
+    margin-top: 2%;  
+}
+
+.skill-img {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.kyle {
+    margin-top: 10%;
+    float: left;
+    max-width: 40%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;  /* Stack children horizontally by default */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Center the container */
+}
+
+.body {
+    flex-grow: 1;  /* This allows the body content to take the remaining width after allocating space for the image */
+}
+
+.bio {
+    font-size: 110%;
+}
+
+@media (max-width: 768px) {
+    .kyle {
+        float: none;  /* Clear the float on mobile */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;  /* Stack children vertically on mobile */
+    }
+
+    .body {
+        text-align: center;  /* Optional: To center align the text in the body on mobile */
+    }
+
+    .skill-img {
+        justify-content: center;  /* Center the skills on mobile */
+    }
+
+    .skill-img li {
+        margin: 5px;  /* Space out the individual skill items a bit */
+    }
+}

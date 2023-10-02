@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import Project from "./components/Project";
 import Skill from "./components/Skill";
 import Modal from "./components/Modal";
+import About from "./components/About";
 
 function App() {
   return (
@@ -17,11 +18,11 @@ function App() {
         <HeroSection />
       </div>
       <body className="body">
+        <About/>
         <Project />
         <Skill />
       </body>
     </div>
   );
 }
-
 export default App;
