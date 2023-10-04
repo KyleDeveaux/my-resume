@@ -1,14 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { FaGithub, FaPython, FaAws } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
-import { BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoDocker, BiLogoRedux, BiLogoNodejs, BiLogoMongodb } from "react-icons/bi";
-import { SiXcode, SiTypescript } from 'react-icons/si'
+import {
+  BiLogoReact,
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoDocker,
+  BiLogoRedux,
+  BiLogoNodejs,
+  BiLogoMongodb,
+} from "react-icons/bi";
+import { SiXcode, SiTypescript } from "react-icons/si";
 import { BsGit, BsCommand } from "react-icons/bs";
+import Modal from "../components/Modal";
 import "../styling/About.css";
 import me from "../images/me1.png";
 
 function About() {
-    
+  const [showModal, setShowModal] = useState(false);
+  // will open modal once called
+  const openModal = () => {
+    setShowModal(true);
+    console.log("Button Clicked!");
+  };
+  // will close modal
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
       <div className="about-container">
@@ -31,7 +49,7 @@ function About() {
               <BiLogoReact /> React
             </li>
             <li>
-            <BiLogoNodejs/> Node.js
+              <BiLogoNodejs /> Node.js
             </li>
             <li>
               <FaPython />
@@ -42,30 +60,33 @@ function About() {
               AWS
             </li>
             <li>
-            <SiXcode/> Xcode
-            </li>       
-            <li>
-            <BiLogoDocker/> Docker
+              <SiXcode /> Xcode
             </li>
             <li>
-            <BiLogoRedux/> Redux
+              <BiLogoDocker /> Docker
             </li>
             <li>
-            <SiTypescript/> Typescript
+              <BiLogoRedux /> Redux
             </li>
             <li>
-            <BiLogoMongodb/> Mongodb
+              <SiTypescript /> Typescript
             </li>
             <li>
-            <BsCommand/> Command Line
+              <BiLogoMongodb /> Mongodb
             </li>
             <li>
               <BsGit /> Git
             </li>
             <li>
-            <FaGithub/> Github
+              <FaGithub /> Github
             </li>
-            <button onClick={console.log("Hello world")}> See more</button>
+
+            <li>
+              <button className="skill-btn" onClick={() => openModal()}>
+                See more
+              </button>
+              {showModal && <Modal closeModal={closeModal} />}
+            </li>
           </ul>
           <h3 className="intro">I'm a nerd for technology 💻 </h3>
           <p className="bio">

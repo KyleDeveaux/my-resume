@@ -7,12 +7,6 @@ import "../styling/Navbar.css";
 import video from "../images/video-1.mp4";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => {
-    setClick(!click);
-  };
-  const closeMenu = () => setClick(false)
-
   return (
     <>
       <div className="nav-background">
@@ -32,7 +26,7 @@ function Navbar() {
             smooth={true}
             offset={50}
             duration={500}
-            onClick={closeMenu}
+           
             className="Link"
           >
             Journey
@@ -44,7 +38,6 @@ function Navbar() {
             smooth={true}
             offset={50}
             duration={500}
-            onClick={closeMenu}
             className="Link"
           >
             About

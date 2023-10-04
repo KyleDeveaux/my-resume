@@ -20,7 +20,6 @@ function App() {
       <body className="body">
         <About/>
         <Project />
-        <Skill />
       </body>
     </div>
   );

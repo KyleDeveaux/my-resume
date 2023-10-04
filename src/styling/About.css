@@ -9,6 +9,22 @@
     margin-top: 20px;
 }
 
+
+
+.skill-btn {
+    background: linear-gradient(45deg, rgb(255, 114, 58), #4338CA); /* gradient background */
+    color: white; /* white text */
+    border: none; /* remove any default borders */
+    border-radius: 20px; /* rounded corners */
+    cursor: pointer; /* hand cursor on hover */
+    transition: all 0.3s; /* smooth transition for hover effects */
+}
+
+.skill-btn:hover {
+    background: linear-gradient(45deg, #4338CA, #6C63FF); /* swap gradient colors */
+    transform: scale(1.05); /* slightly enlarge button */
+}
+
 .kyle {
     margin-top: 10%;
     float: left;

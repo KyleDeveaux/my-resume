@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import video from "../images/video-1.mp4";
 import AOS from "aos";
+import { VscGithub } from 'react-icons/vsc'
+import { BsLinkedin, BsInstagram } from 'react-icons/bs'
+import { BiMailSend } from 'react-icons/bi'
 import "../styling/HeroSection.css";
-import me from "../images/me1.png";
+// import me from "../images/me1.png";
 
 function HeroSection() {
   const qoutes = [
@@ -36,14 +39,19 @@ function HeroSection() {
 
   return (
 <>
-
   <div className="hero-container">
     <video src={video} autoPlay loop muted  />
-    <img className="profile-pic" src={me} />
-    <h1 data-aos="fade-up">Kyle Deveaux</h1>
-    <p className="qoute" data-aos="fade-up">
-      {randomQoute}
-    </p>
+    <h1>Hi, I'm Kyle | <span className="highlighted-text">Software</span></h1>
+      <h1><span className="highlighted-text">Engineer</span></h1>
+    <div className="btn-list">
+      <ul>
+        <a href="https://www.linkedin.com/in/kyle-deveaux-74ba57170/" ><BsLinkedin className="icon-btn" size='3em'/></a>
+        <a href="https://github.com/KyleDeveaux"><VscGithub className="icon-btn" size='3em'/></a>
+        <a href='https://www.instagram.com/kdev0/'><BsInstagram className="icon-btn" size='3em'/></a>
+        <a  href="mailto:kyledeveaux@gmail.com"><BiMailSend className="icon-btn" size='3em'/></a>
+      </ul>
+    </div>
+      <p className="qoute">“I have a passion for exploration and innovation Every line of code I write is backed by my commitment as a lifelong learner 🎓 always pushing the boundaries of what's possible 🚀”</p>
   </div>
   <div className="button"></div>
 </>
@@ -51,3 +59,9 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+{/* <img className="profile-pic" src={me} />
+<h1 data-aos="fade-up">Kyle Deveaux</h1>
+<p className="qoute" data-aos="fade-up">
+  {randomQoute}
+</p> */}
