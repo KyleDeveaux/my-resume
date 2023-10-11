@@ -19,7 +19,7 @@
 /* Media Query for Mobile */
 @media only screen and (max-width: 768px) {
     .video {
-        height: 50vh; /* Adjust the video height on mobile screens */
+        height: 50vh;
     }
 }
 

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../styling/Carousel.css";
@@ -7,18 +7,18 @@ import Modal from "./Modal";
 import { Link } from "react-router-dom";
 
 function ResumeCarousel() {
-  const [ showModal, setShowModal ] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
   const openModal = (item) => {
-    setSelectedItem(item)
+    setSelectedItem(item);
     setShowModal(true);
-  }
+  };
 
   const closeModal = (item) => {
-    setSelectedItem(item)
+    setSelectedItem(item);
     setShowModal(false);
-  }
+  };
 
   const responsive = {
     superLargeDesktop: {
@@ -38,23 +38,35 @@ function ResumeCarousel() {
       items: 1,
     },
   };
+  console.log("Carousel Data:", data);
+
   const projectData = data.map((item) => (
     <div className="App" key={item.id}>
       <div className="card">
-        <img className="product--image" src={item.image} alt="projects" />
+        <img className="product--image" src={item.image} alt="project" />
         <h2>{item.title}</h2>
         <p>{item.summary}</p>
         <p>
-          <button className="openModalBtn"><Link className="openModalBtn" to="project">View Details</Link></button>
+          <button className="openModalBtn">
+            <Link
+              className="openModalBtn"
+              to={{
+                pathname: `/project/${item.id}`,
+                state: { projectId: item.id },
+              }}
+              >
+              View Details
+            </Link>
+          </button>
         </p>
       </div>
+      {console.log("Link Data:", item)}
     </div>
   ));
+
   return (
     <div>
-      <Carousel responsive={responsive}>
-        {projectData}
-      </Carousel>
+      <Carousel responsive={responsive}>{projectData}</Carousel>
       {showModal && selectedItem && (
         <Modal
           title={selectedItem.title}
@@ -68,28 +80,27 @@ function ResumeCarousel() {
 }
 export default ResumeCarousel;
 
-
-  // Use mapping to cycle through each of our data in our data file
-  // const projectData = data.map(item => {
-  //   return (
-  //     <div className="App">
-  //       <div className="card">
-  //         <img className="product--image" src={item.image} alt="projects" />
-  //         <h2>{item.title}</h2>
-  //         <p>{item.summary}</p>
-  //         <p>
-  //           <button onClick={() => openModal(item)}>View Details</button>
-  //           {showModal && selectedItem === item && (
-  //             <Modal
-  //               title={item.title}
-  //               closeModal={closeModal}
-  //             />
-  //           )}
-  //         </p>
-  //       </div>
-  //     </div>
-  //   )
-  // })
+// Use mapping to cycle through each of our data in our data file
+// const projectData = data.map(item => {
+//   return (
+//     <div className="App">
+//       <div className="card">
+//         <img className="product--image" src={item.image} alt="projects" />
+//         <h2>{item.title}</h2>
+//         <p>{item.summary}</p>
+//         <p>
+//           <button onClick={() => openModal(item)}>View Details</button>
+//           {showModal && selectedItem === item && (
+//             <Modal
+//               title={item.title}
+//               closeModal={closeModal}
+//             />
+//           )}
+//         </p>
+//       </div>
+//     </div>
+//   )
+// })
 //   return (
 //     <div>
 //       <Carousel responsive={responsive}>
@@ -98,5 +109,3 @@ export default ResumeCarousel;
 //     </div>
 //   );
 // }
-
-

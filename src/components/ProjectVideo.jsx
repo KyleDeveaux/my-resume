@@ -1,10 +1,12 @@
 import React from 'react'
 import '../styling/ProjectVideo.css';
 
-function ProjectVideo() {
+function ProjectVideo({ project }) {
+
+
   return (
     <div className='video'>
-        <iframe className="video1" src="https://www.youtube.com/embed/xNRJwmlRBNU?si=ZlV1aJzu2G6VZpeG" frameborder="0"></iframe>
+        <iframe className="video1" src={project.video} frameborder="0"></iframe>
     </div>
   )
 }

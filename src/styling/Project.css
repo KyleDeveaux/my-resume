@@ -23,7 +23,7 @@
 @media (max-width: 768px) {
 
     .headerProjects >h1 {
-        text-align: center;  /* Optional: To center align the text in the body on mobile */
+        text-align: center;  
     }
 
 }
