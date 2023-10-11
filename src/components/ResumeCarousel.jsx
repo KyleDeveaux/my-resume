@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import "../styling/Carousel.css";
 import data from "../data";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 function ResumeCarousel() {
   const [ showModal, setShowModal ] = useState(false);
@@ -44,7 +45,7 @@ function ResumeCarousel() {
         <h2>{item.title}</h2>
         <p>{item.summary}</p>
         <p>
-          <button className="openModalBtn" onClick={() => openModal(item)}>View Details</button>
+          <button className="openModalBtn"><Link className="openModalBtn" to="project">View Details</Link></button>
         </p>
       </div>
     </div>

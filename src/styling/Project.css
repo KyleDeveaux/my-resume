@@ -12,10 +12,18 @@
 }
 
 .headerProjects > p {
-    font-size: 25px;
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-bottom: 1%;
+    display: flex;
+    flex-direction: row;  /* Stack children horizontally by default */
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;  /* Center the container */
 }
 
+@media (max-width: 768px) {
+
+    .headerProjects >h1 {
+        text-align: center;  /* Optional: To center align the text in the body on mobile */
+    }
+
+}
