@@ -1,0 +1,81 @@
+.description-box {
+    display: flex;
+    align-items: flex-start; /* Adjust vertical alignment as you prefer */
+    gap: 10px; /* Space between text and button */
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+
+.project-discription {
+    flex: 1; /* This makes sure that the paragraph occupies all available space */
+    overflow: hidden;
+    height: 50px; /* Initial height */
+    transition: height 0.3s ease;
+}
+
+.project-discription.expanded {
+    height: auto; /* Adjust to fit content when expanded */
+}
+
+.toggle-button {
+    cursor: pointer; /* Makes it apparent it's clickable */
+    background: none; /* Remove default background */
+    border: none; /* Remove default borders */
+    color: blue; /* Make it look like a typical hyperlink */
+}
+
+.thumbs {
+    display: flex;
+}
+
+.thumbs {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    border-radius: 50px; /* This gives the pill shape */
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #f8f8f8, #e0e0e0); /* Gradient white background */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.thumbs-up, .thumbs-down {
+    background: none; /* No background */
+    color: #333; /* Dark text/icon color */
+    border: none; /* Removes default border */
+    padding: 10px; 
+    border-radius: 50%; /* Makes it circular */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transition for hover effects */
+    font-size: 1rem; 
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+}
+
+
+.HOME {
+    text-decoration: none; /* remove underline from Link */
+    color: inherit; /* take color from parent, useful if you want to change icon colors later */
+    display: flex; /* added to align the ImHome icon */
+    align-items: center; /* added to align the ImHome icon */
+}
+
+/* Hover effects to darken the icon color */
+.thumbs-up:hover, .HOME\, .thumbs-down:hover {
+    padding: 3px; /* reduced padding for smaller screens */
+    color: #111;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .description-box {
+        flex-direction: column; /* Stack vertically on mobile */
+    }
+
+    .toggle-button {
+        align-self: flex-end; /* Push the button to the right on mobile */
+    }
+}

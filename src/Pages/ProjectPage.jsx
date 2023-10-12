@@ -6,11 +6,8 @@ import data from "../data";
 
 function ProjectPage() {
   const params = useParams();
-  const projectId = parseInt(params.id, 10); // Convert id to integer
+  const projectId = parseInt(params.id, 10);
   const project = data.find((p) => p.id === projectId);
-
-  console.log(params.id);
-  console.log(project.title);
 
   return (
     <>
