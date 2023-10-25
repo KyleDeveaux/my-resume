@@ -38,7 +38,6 @@ function ResumeCarousel() {
       items: 1,
     },
   };
-  console.log("Carousel Data:", data);
 
   const projectData = data.map((item) => (
     <div className="App" key={item.id}>
@@ -60,7 +59,6 @@ function ResumeCarousel() {
           </button>
         </p>
       </div>
-      {console.log("Link Data:", item)}
     </div>
   ));
 

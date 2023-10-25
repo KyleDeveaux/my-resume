@@ -1,7 +1,7 @@
 .description-box {
     display: flex;
-    align-items: flex-start; /* Adjust vertical alignment as you prefer */
-    gap: 10px; /* Space between text and button */
+    align-items: flex-start; 
+    gap: 10px; 
     border: 1px solid #e0e0e0;
     padding: 1rem;
     border-radius: 20px;
@@ -59,6 +59,10 @@
     color: inherit; /* take color from parent, useful if you want to change icon colors later */
     display: flex; /* added to align the ImHome icon */
     align-items: center; /* added to align the ImHome icon */
+}
+
+.recommendation{
+    margin-top: 1%;
 }
 
 /* Hover effects to darken the icon color */

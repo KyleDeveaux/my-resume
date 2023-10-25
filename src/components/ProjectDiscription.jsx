@@ -2,15 +2,32 @@ import React, { useState } from "react";
 import { BiLike, BiDislike, BiSolidLike, BiSolidDislike } from "react-icons/bi";
 import { ImHome } from "react-icons/im";
 import { Link } from "react-router-dom";
-import { AiOutlineDownSquare } from "react-icons/ai"
 import "../styling/ProjectDiscription.css";
+import ResumeCarousel from "./ResumeCarousel";
 
 function ProjectDiscription({ project }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [numOfLikes, setNumOfLikes] = useState(0);
 
   const toggleDescription = () => {
     setIsExpanded(!isExpanded);
-  };
+  };  
+  // state of the like button
+    const [isLiked, setIsLiked] = useState(false);
+    
+    // When like button is pressed˜
+    const thumbsUp = () => {
+        setIsLiked(true);
+        setNumOfLikes(prevLikes => prevLikes + 1);
+        console.log('count of likes',numOfLikes);
+    }
+  
+    // When dislike button is pressed
+    const thumbsDown = () => {
+        setIsLiked(false);
+        setNumOfLikes(prevLikes => prevLikes - 1);
+        console.log('count of likes',numOfLikes);
+    }
 
   return (
     <>
@@ -20,11 +37,14 @@ function ProjectDiscription({ project }) {
         </div>
         <div className="project-body">
           <div className="thumbs">
-            <button className="thumbs-up">
-              <BiLike />
+            <button onClick={ ()=> { thumbsUp() }
+        } className="thumbs-up">
+                {isLiked ? <BiSolidLike/> : <BiLike/>}
+              {numOfLikes}
             </button>
-            <button className="thumbs-down">
-              <BiDislike />
+            <button onClick={ ()=> { thumbsDown() }} className="thumbs-down">
+
+              {!isLiked ? <BiSolidDislike/> : <BiDislike/>}
             </button>
             <Link className="HOME" to={"/"}>
             <ImHome />
@@ -40,33 +60,10 @@ function ProjectDiscription({ project }) {
               {isExpanded ? "Show less" : "More..."}
             </button>
           </div>
-          <ul>
-            <p className="comments"></p>
-            <p className="comments"></p>
-            <p className="comments"></p>
-            <p className="comments"></p>
-            <p className="comments"></p>
-          </ul>
         </div>
         <div className="recommendation">
-          <ul>
-            <iframe
-              src="https://www.youtube.com/embed/xNRJwmlRBNU?si=ZlV1aJzu2G6VZpeG"
-              frameborder="0"
-            ></iframe>
-            <iframe
-              src="https://www.youtube.com/embed/xNRJwmlRBNU?si=ZlV1aJzu2G6VZpeG"
-              frameborder="0"
-            ></iframe>
-            <iframe
-              src="https://www.youtube.com/embed/xNRJwmlRBNU?si=ZlV1aJzu2G6VZpeG"
-              frameborder="0"
-            ></iframe>
-            <iframe
-              src="https://www.youtube.com/embed/xNRJwmlRBNU?si=ZlV1aJzu2G6VZpeG"
-              frameborder="0"
-            ></iframe>
-          </ul>
+            <h2>Recommendations</h2>
+          <ResumeCarousel/>
         </div>
       </div>
     </>

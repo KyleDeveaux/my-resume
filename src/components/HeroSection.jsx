@@ -20,7 +20,7 @@ function HeroSection() {
   // const [randomQoute, setRandomQoute] = useState("");
   
   // useEffect(() => {
-  //   AOS.init({
+  //   AOS.init(
   //     duration: 3000,
   //   });
   // }, []);
@@ -40,8 +40,9 @@ function HeroSection() {
 
   return (
 <>
-  <div className="hero-container">
     <video src={video} autoPlay loop muted  />
+  <div className="hero-container">
+    
     <h1>Hi, I'm Kyle | <span className="highlighted-text">Software</span></h1>
       <h1><span className="highlighted-text">Engineer</span></h1>
     <div className="btn-list">

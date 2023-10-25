@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: "MOT System",
-    image: "https://i.ibb.co/KL0pYLT/project-One.png",
+    image: "https://www.fau.edu/engineering/senior-design/images/spring2023-poster-images/35.jpg",
     summary: "Project FrontEnd Leader",
     pathname: "project-1",
     objective:
@@ -14,7 +14,7 @@ export default [
     id: 2,
     title: "Property Database",
     image:
-      "https://i.ibb.co/56L6dwg/modern-architectural-style-with-warm-finishes-to-compliment-mountain-setting.jpg",
+      "https://slopeside-engineers.com/wp-content/uploads/2022/11/Modern-Home-980x603.jpg",
     summary: "Project Leader ",
     date: "",
     objective: "In this project, I assumed the role of team leader, guiding our group in developing a tailored property management database. Our objective was to enable users to catalog items for their properties and track associated costs seamlessly. I was instrumental in instilling structure and orchestrating the project, organizing sprints, and ensuring team accountability to meet our deadlines. I assigned each member specific tasks to create individual components and educated them on the importance of functional programming in React, as it was their first encounter with the framework. Being at the forefront of both frontend and backend development, I ensured the seamless integration and functionality of the entire system.",
@@ -43,15 +43,15 @@ export default [
     lesson: "",
     video: ""
   },
-  {
-    id: 5,
-    title: "Simon Game",
-    image: "https://i.ibb.co/9816Xsf/Screen-Shot-2023-09-25-at-5-38-45-PM.png",
-    summary: "Personal Project",
-    date: "",
-    objective: "",
-    lesson: "",
-    video: ""
-  },
+  // {
+  //   id: 5,
+  //   title: "Simon Game",
+  //   image: "https://i.ibb.co/9816Xsf/Screen-Shot-2023-09-25-at-5-38-45-PM.png",
+  //   summary: "Personal Project",
+  //   date: "",
+  //   objective: "",
+  //   lesson: "",
+  //   video: ""
+  // },
 ];
 //

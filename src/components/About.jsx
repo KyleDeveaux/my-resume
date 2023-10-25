@@ -21,7 +21,6 @@ function About() {
   // will open modal once called
   const openModal = () => {
     setShowModal(true);
-    console.log("Button Clicked!");
   };
   // will close modal
   const closeModal = () => {
@@ -31,7 +30,7 @@ function About() {
     <>
       <div className="about-container">
         <img className="kyle" src={me} />
-        <div className="body">
+        <div className="about-body">
           <h1 className="head-line" id="About">
             My Skills 🤌
           </h1>

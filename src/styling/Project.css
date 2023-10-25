@@ -1,29 +1,46 @@
+/* To left align content */
+.projects {
+    background-color: rgba(142, 185, 222, 0.15);
+    padding-left: 5rem; /* Adjust based on your preference */
+}
+
 .carousel{
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    align-items: center;
+    align-items: left;
 }
 
-.headerProjects > h1{
+.headerProjects > h1 {
     font-size: 60px;
-    text-align: center;
-    padding-top: 3%;
+    text-align: left;  /* Align to left */
+    padding-top: 2%;
 }
 
 .headerProjects > p {
-    display: flex;
-    flex-direction: row;  /* Stack children horizontally by default */
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 0 auto;  /* Center the container */
+    
+    font-size: 20px;
+    max-width: 5000px;
+    text-align: left;  /* Align the text to left instead of using flexbox */
+    padding-right: 5rem;  /* Adjust based on your preference */
 }
 
+/* Mobile view */
 @media (max-width: 768px) {
-
-    .headerProjects >h1 {
-        text-align: center;  
+    .projects {
+        padding-left: 20px; /* Left padding for mobile */
+    }
+    
+    .headerProjects > h1, 
+    .headerProjects > p {
+        text-align: center;
+        padding-left: 20px; /* Left padding for mobile */
+        padding-right: 20px; /* Right padding for mobile */
     }
 
+    .carousel {
+        padding-left: 20px; /* Left padding for mobile */
+        padding-right: 20px; /* Right padding for mobile */
+    }
 }
+

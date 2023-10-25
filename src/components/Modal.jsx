@@ -51,7 +51,7 @@ function Modal({ title, closeModal, objective, lesson }) {
           <div className="title">
             <h1>{title}</h1>
           </div>
-          <div className="body">
+          <div className=" modal-body">
             <h2 className="dataSections">Objective:</h2>
             <p>{objective}</p>
             <h2 className="dataSections"> Lesson Learned:</h2>

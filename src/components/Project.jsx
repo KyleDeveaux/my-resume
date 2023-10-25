@@ -13,8 +13,6 @@ function Project() {
             system. I am proud that these project have helped me create a
             greater understanding what it means to be an engineer.
           </p>
-        </div>
-        <div className="carousel">
           <ResumeCarousel />
         </div>
       </div>

@@ -36,11 +36,12 @@
     flex-direction: row;  /* Stack children horizontally by default */
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 2200px;
     margin: 0 auto;  /* Center the container */
+    padding-bottom: 5%;
 }
 
-.body {
+.about-body {
     flex-grow: 1;  /* This allows the body content to take the remaining width after allocating space for the image */
 }
 
@@ -55,6 +56,10 @@
         margin-top: 20px;
     }
 
+    .intro {
+        font-size: 30px;
+    }
+
     .about-container {
         flex-direction: column;  /* Stack children vertically on mobile */
     }
@@ -65,6 +70,7 @@
 
     .skill-img {
         justify-content: center;  /* Center the skills on mobile */
+        padding-right: 5%;
     }
 
     .skill-img li {
