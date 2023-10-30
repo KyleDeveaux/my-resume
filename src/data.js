@@ -8,7 +8,7 @@ export default [
     objective:
       "Leading Team 18, I orchestrated the development of a sophisticated system for Florida Power & Light to enhance worker safety by detecting vehicles entering maintenance zones. My key role involved steering both frontend and backend development, ensuring the seamless integration of cutting-edge technologies including microcontrollers and lidar sensors for real-time vehicle tracking. Our coordinated efforts and technical prowess led to the successful creation of a robust system, achieving FPL’s objectives and demonstrating our commitment to innovation and safety.",
     lesson: "During this project, I deepened my knowledge of React and JavaScript, honing my skills in crafting responsive interfaces. I familiarized myself with MongoDB for effective database management and AWS for secure cloud solutions. Exploring Python, I tackled backend challenges and mastered the creation and utilization of APIs, crucial for real-time data transfer. Additionally, I gained insights into embedded systems, learning to integrate microcontrollers with sensors for real-time monitoring. This experience was pivotal in broadening my technical skill set and preparing me for future technological endeavors.",
-    video: "https://www.youtube.com/embed/xNRJwmlRBNU?si=ZlV1aJzu2G6VZpeG"
+    video: "https://www.youtube.com/embed/XZZJnXHtNDI"
   },
   {
     id: 2,

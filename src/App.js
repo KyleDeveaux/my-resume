@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Skill from "./components/Skill";
 import Modal from "./components/Modal";
 import About from "./components/About";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <About/>
         <Project />
       </body>
+      <footer>
+        <ContactSection/>
+      </footer>
     </div>
   );
 }
