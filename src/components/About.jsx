@@ -81,9 +81,9 @@ function About() {
             </li>
 
             <li>
-              <button className="skill-btn" onClick={() => openModal()}>
+              {/* <button className="skill-btn" onClick={() => openModal()}>
                 See more
-              </button>
+              </button> */}
               {showModal && <Modal closeModal={closeModal} />}
             </li>
           </ul>

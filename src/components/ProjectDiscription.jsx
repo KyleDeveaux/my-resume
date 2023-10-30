@@ -7,7 +7,7 @@ import ResumeCarousel from "./ResumeCarousel";
 
 function ProjectDiscription({ project }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [numOfLikes, setNumOfLikes] = useState(0);
+  const [numOfLikes, setNumOfLikes] = useState(121);
 
   const toggleDescription = () => {
     setIsExpanded(!isExpanded);

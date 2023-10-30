@@ -1,3 +1,7 @@
+.project-container{
+    padding: 2.5rem;
+}
+
 .description-box {
     display: flex;
     align-items: flex-start; 

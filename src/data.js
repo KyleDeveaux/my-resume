@@ -17,9 +17,9 @@ export default [
       "https://slopeside-engineers.com/wp-content/uploads/2022/11/Modern-Home-980x603.jpg",
     summary: "Project Leader ",
     date: "",
-    objective: "In this project, I assumed the role of team leader, guiding our group in developing a tailored property management database. Our objective was to enable users to catalog items for their properties and track associated costs seamlessly. I was instrumental in instilling structure and orchestrating the project, organizing sprints, and ensuring team accountability to meet our deadlines. I assigned each member specific tasks to create individual components and educated them on the importance of functional programming in React, as it was their first encounter with the framework. Being at the forefront of both frontend and backend development, I ensured the seamless integration and functionality of the entire system.",
+    objective: "****VIDEO COMING SOON**** In this project, I assumed the role of team leader, guiding our group in developing a tailored property management database. Our objective was to enable users to catalog items for their properties and track associated costs seamlessly. I was instrumental in instilling structure and orchestrating the project, organizing sprints, and ensuring team accountability to meet our deadlines. I assigned each member specific tasks to create individual components and educated them on the importance of functional programming in React, as it was their first encounter with the framework. Being at the forefront of both frontend and backend development, I ensured the seamless integration and functionality of the entire system.",
     lesson: "",
-    video: "https://www.youtube.com/embed/RUFxmAjbNbg?si=zM2vXZgIglVTtemz"
+    video: ""
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export default [
       "https://user-images.githubusercontent.com/81199017/196583349-e977c918-f1c8-4733-a9c6-3a4960d4b26d.gif",
     summary: "School Project",
     date: "",
-    objective: "",
+    objective: "****VIDEO COMING SOON**** In today's video, I'm super excited to show you a clone of Instagram that I built for my homework assignment using SwiftUI. So first off, I made sure that once you log in, you'll stay logged in even after restarting the app. Super convenient, right? And of course, you can log out whenever you want. You can view and add comments on posts, so you can interact with your friends and the whole community. Hope you guys like it! If you do, give this video a thumbs up. Thanks for watching!",
     lesson: "",
     video: ""
   },
@@ -39,7 +39,7 @@ export default [
       "https://user-images.githubusercontent.com/81199017/190042874-98d15526-e9d4-41aa-b5e6-ca254534c422.gif",
     summary: "School Project",
     date: "",
-    objective: "",
+    objective: "****VIDEO COMING SOON**** Hey everyone, welcome back to my channel! Today, I'm excited to share with you a project I've been working on called Flix, where I built a local movie app that pulls data from current movies in theaters using an API. In this app, you can tap on any movie cell to see more details about it, like the showtimes and locations. That's not all - I also included reviews from Rotten Tomatoes, so you can see what critics are saying about the movie. But wait, there's more! You can also tap on a tab bar button to view a grid layout of movie posters using a CollectionView. I hope you guys like this walkthrough of Flix.",
     lesson: "",
     video: ""
   },
