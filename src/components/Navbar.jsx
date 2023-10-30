@@ -13,24 +13,6 @@ function Navbar() {
         <video className="nav-background" src={video} autoPlay loop muted />
 
         <div className="header">
-          <a
-            href="https://www.linkedin.com/in/kyle-deveaux-74ba57170/"
-            className="Link"
-          >
-            LinkedIn
-          </a>
-          {/* Will bring you down to the journey section of the page */}
-          <Link
-            to="Journey"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-           
-            className="Link"
-          >
-            Journey
-          </Link>
           {/* Will bring you down to the resume section of the page */}
           <Link
             to="About"
@@ -41,6 +23,27 @@ function Navbar() {
             className="Link"
           >
             About
+          </Link>
+          {/* Will bring you down to the journey section of the page */}
+          <Link
+            to="Journey"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="Link"
+          >
+            Journey
+          </Link>
+          <Link
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="Link"
+          >
+            Contact
           </Link>
         </div>
       </div>

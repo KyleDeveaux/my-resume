@@ -28,10 +28,10 @@ function About() {
   };
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" id="About">
         <img className="kyle" src={me} />
         <div className="about-body">
-          <h1 className="head-line" id="About">
+          <h1 className="head-line" >
             My Skills 🤌
           </h1>
           <ul className="skill-img">
