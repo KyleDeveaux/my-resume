@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaGithub, FaPython, FaAws } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
+import { AiFillApi } from "react-icons/ai"
 import {
   BiLogoReact,
   BiLogoHtml5,
@@ -77,7 +78,7 @@ function About() {
               <BsGit /> Git
             </li>
             <li>
-              <FaGithub /> Github
+              <AiFillApi /> API
             </li>
 
             <li>
